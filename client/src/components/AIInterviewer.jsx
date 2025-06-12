@@ -335,7 +335,7 @@ const AIInterviewer = () => {
   }
 
   return (
-    <div className="interview-container">
+    <div className="interview-container feature-section">
       <h1 className="interview-title">AI Interviewer</h1>
       
       {renderError()}
