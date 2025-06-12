@@ -12,7 +12,7 @@ const ImageDisplay = ({
   if (!imageSrc || imageError) return null;
 
   return (
-    <div className="image-container">
+    <div className="image-container" style={{ width: '550px', height: '550px' }}>
       <h3 className="results-title">{title}</h3>
       <img 
         src={imageSrc} 
