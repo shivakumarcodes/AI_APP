@@ -137,6 +137,7 @@ const AIInterviewer = () => {
   const endInterview = async (messages = chatMessages) => {
     setInterviewComplete(true);
     setIsLoading(true);
+    speechSynthesis.cancel()
     
     try {
       // Simulate API call to evaluate interview
