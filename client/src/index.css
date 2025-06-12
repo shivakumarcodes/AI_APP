@@ -433,8 +433,8 @@ body {
 }
 
 .generated-image, .uploaded-image {
-  max-width: 100%;
-  height: auto;
+  max-width: 500px;
+  max-height: 500px;
   border-radius: var(--border-radius-lg);
   box-shadow: var(--shadow-xl);
   margin: 1rem auto;
