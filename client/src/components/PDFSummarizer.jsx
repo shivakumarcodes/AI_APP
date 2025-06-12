@@ -6,7 +6,7 @@ const PDFSummarizer = () => {
   const [isLoading, setIsLoading] = useState(false);
   const pdfInputRef = useRef(null);
 
-  const API_BASE = 'http://localhost:3001';
+  const API_BASE = 'https://ai-app-vbhf.onrender.com';
 
   const handlePdfUpload = async (event) => {
     const file = event.target.files[0];

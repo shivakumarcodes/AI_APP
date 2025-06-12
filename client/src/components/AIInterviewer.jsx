@@ -21,7 +21,7 @@ const AIInterviewer = () => {
   const audioRef = useRef(null);
   const chatContainerRef = useRef(null);
 
-  const API_BASE = 'http://localhost:3001';
+  const API_BASE = 'https://ai-app-vbhf.onrender.com';
   const MAX_QUESTIONS = 5 + Math.floor(Math.random() * 3); // Random between 5-7 questions
 
   useEffect(() => {

@@ -9,7 +9,7 @@ const ObjectDetection = () => {
   const [isLoading, setIsLoading] = useState(false);
   const fileInputRef = useRef(null);
 
-  const API_BASE = 'http://localhost:3001';
+  const API_BASE = 'https://ai-app-vbhf.onrender.com';
 
   const handleImageUpload = async (event) => {
     const file = event.target.files[0];
