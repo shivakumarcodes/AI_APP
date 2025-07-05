@@ -11,16 +11,18 @@ const rateLimit = require('express-rate-limit');
 
 //server url : https://shiva-ai-app.onrender.com
 
+const app = express();
+app.use(cors());
+
+
 const limiter = rateLimit({
   windowMs: 60 * 1000, // 1 minute
   max: 20 // limit each IP to 20 requests per minute
 });
 
-const app = express();
 const PORT = process.env.PORT || 3001;
 
 // Middleware
-app.use(cors());
 app.use(express.json());
 app.use(limiter);
 
