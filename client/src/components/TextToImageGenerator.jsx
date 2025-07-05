@@ -10,7 +10,7 @@ const TextToImageGenerator = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [isRecording, setIsRecording] = useState(false);
 
-  const API_BASE = 'https://ai-app-vbhf.onrender.com';
+  const API_BASE = 'https://shiva-ai-app.onrender.com';
 
   const generateImage = useCallback(async () => {
     if (!inputText.trim()) {

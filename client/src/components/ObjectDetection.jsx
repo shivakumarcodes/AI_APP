@@ -9,7 +9,7 @@ const ObjectDetection = () => {
   const [isLoading, setIsLoading] = useState(false);
   const fileInputRef = useRef(null);
 
-  const API_BASE = 'https://ai-app-vbhf.onrender.com';
+  const API_BASE = 'https://shiva-ai-app.onrender.com';
 
   const handleImageUpload = async (event) => {
     const file = event.target.files[0];

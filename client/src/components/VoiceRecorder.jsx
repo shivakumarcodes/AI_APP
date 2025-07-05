@@ -8,7 +8,7 @@ const VoiceRecorder = ({ onResult, setIsRecording }) => {
   const mediaRecorderRef = useRef(null);
   const audioChunksRef = useRef([]);
 
-  const API_BASE = 'https://ai-app-vbhf.onrender.com';
+  const API_BASE = 'https://shiva-ai-app.onrender.com';
 
   const startRecording = async () => {
     try {
