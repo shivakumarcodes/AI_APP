@@ -21,7 +21,7 @@ const AIInterviewer = () => {
   const audioRef = useRef(null);
   const chatContainerRef = useRef(null);
 
-  const API_BASE = 'https://shiva-ai-app.onrender.com';
+  const API_BASE = 'https://ai-app-backend-cp1d.onrender.com';
   const MAX_QUESTIONS = 5 + Math.floor(Math.random() * 3); // Random between 5-7 questions
 
   useEffect(() => {

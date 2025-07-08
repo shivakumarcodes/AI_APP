@@ -6,7 +6,7 @@ const PDFSummarizer = () => {
   const [isLoading, setIsLoading] = useState(false);
   const pdfInputRef = useRef(null);
 
-  const API_BASE = 'https://shiva-ai-app.onrender.com';
+  const API_BASE = 'https://ai-app-backend-cp1d.onrender.com';
 
   const handlePdfUpload = async (event) => {
     const file = event.target.files[0];
