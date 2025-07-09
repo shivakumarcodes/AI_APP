@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { Upload } from 'lucide-react';
 import ImageDisplay from './ImageDisplay';
+import { API_BASE } from '../api/baseUrl';
 
 const ObjectDetection = () => {
   const [detectedObjects, setDetectedObjects] = useState([]);
@@ -8,8 +9,6 @@ const ObjectDetection = () => {
   const [imageError, setImageError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const fileInputRef = useRef(null);
-
-  const API_BASE = 'https://ai-app-backend-cp1d.onrender.com';
 
   const handleImageUpload = async (event) => {
     const file = event.target.files[0];

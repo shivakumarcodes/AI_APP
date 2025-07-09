@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { MessageCircle, Mic, MicOff, Send, Volume2, Trophy, RotateCcw } from 'lucide-react';
+import { API_BASE } from '../api/baseUrl';
 import '../styles/AIInterviewer.css';
 
 const AIInterviewer = () => {
@@ -21,7 +22,6 @@ const AIInterviewer = () => {
   const audioRef = useRef(null);
   const chatContainerRef = useRef(null);
 
-  const API_BASE = 'https://ai-app-backend-cp1d.onrender.com';
   const MAX_QUESTIONS = 5 + Math.floor(Math.random() * 3); // Random between 5-7 questions
 
   useEffect(() => {

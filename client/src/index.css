@@ -262,6 +262,10 @@ body {
   min-width: 50px;
 }
 
+.mic-button:hover:not(:disabled){
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%) !important;
+}
+
 .mic-button::before {
   content: '';
   position: absolute;

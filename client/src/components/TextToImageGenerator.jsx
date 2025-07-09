@@ -2,6 +2,7 @@ import React, { useState, useCallback } from 'react';
 import { AlertCircle } from 'lucide-react';
 import VoiceRecorder from './VoiceRecorder';
 import ImageDisplay from './ImageDisplay';
+import { API_BASE } from '../api/baseUrl';
 
 const TextToImageGenerator = () => {
   const [inputText, setInputText] = useState('');
@@ -9,8 +10,6 @@ const TextToImageGenerator = () => {
   const [imageError, setImageError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [isRecording, setIsRecording] = useState(false);
-
-  const API_BASE = 'https://ai-app-backend-cp1d.onrender.com';
 
   const generateImage = useCallback(async () => {
     if (!inputText.trim()) {

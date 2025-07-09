@@ -1,12 +1,12 @@
 import React, { useState, useRef } from 'react';
 import { FileText } from 'lucide-react';
+import { API_BASE } from '../api/baseUrl';
+
 
 const PDFSummarizer = () => {
   const [pdfSummary, setPdfSummary] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const pdfInputRef = useRef(null);
-
-  const API_BASE = 'https://ai-app-backend-cp1d.onrender.com';
 
   const handlePdfUpload = async (event) => {
     const file = event.target.files[0];

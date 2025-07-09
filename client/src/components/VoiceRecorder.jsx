@@ -1,5 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { Mic } from 'lucide-react';
+import { API_BASE } from '../api/baseUrl';
 import '../styles/VoiceRecorder.css';
 
 const VoiceRecorder = ({ onResult, setIsRecording }) => {
@@ -7,8 +8,6 @@ const VoiceRecorder = ({ onResult, setIsRecording }) => {
   const [isActiveRecording, setIsActiveRecording] = useState(false);
   const mediaRecorderRef = useRef(null);
   const audioChunksRef = useRef([]);
-
-  const API_BASE = 'https://ai-app-backend-cp1d.onrender.com';
 
   const startRecording = async () => {
     try {

@@ -9,7 +9,7 @@ const axios = require('axios');
 const pdfParse = require('pdf-parse');
 const rateLimit = require('express-rate-limit');
 
-//server url : https://shiva-ai-app.onrender.com
+//server url : https://ai-app-vbhf.onrender.com
 
 const app = express();
 app.use(cors());
@@ -731,6 +731,10 @@ app.use((error, req, res, next) => {
   console.error('Server Error:', error);
   res.status(500).json({ success: false, error: 'Internal server error' });
 });
+
+app.get('/api/status',(req,res)=>{
+    res.status(200).json({ message: 'Server Running..' });
+})
 
 // Start server
 app.listen(PORT, () => {
