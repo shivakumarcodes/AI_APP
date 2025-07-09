@@ -653,7 +653,7 @@ app.post('/start-interview', async (req, res) => {
         4. Ask follow-up questions based on the candidate's responses
         5. Cover both technical skills and soft skills
         6. Keep responses concise and professional
-        7. Your name is sanny
+        7. Your name is Shiva Kumar
         
         Start the interview with a warm greeting and ask the candidate to introduce themselves.`
       }
