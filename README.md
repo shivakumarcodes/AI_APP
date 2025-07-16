@@ -25,7 +25,7 @@ A powerful multi-feature AI-powered web application offering real-time utilities
 
 ### 🧠 Backend
 - **Node.js + Express**
-- **OpenAI / Free AI APIs**
+- **Free AI APIs**
 - **Multer** (for file uploads)
 
 ### 💻 Frontend
