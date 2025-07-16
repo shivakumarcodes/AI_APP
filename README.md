@@ -43,7 +43,7 @@ A powerful multi-feature AI-powered web application offering real-time utilities
 git clone https://github.com/yourusername/ai-features-app.git
 cd ai-features-app
 
-# Install dependencies for both frontend and backend
+# Install dependencies for both frontend and backend and run
 cd client
 npm install
 npm run dev
