@@ -46,6 +46,8 @@ cd ai-features-app
 # Install dependencies for both frontend and backend
 cd client
 npm install
+npm run dev
 
 cd ../server
 npm install
+node server.js
