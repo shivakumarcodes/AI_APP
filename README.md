@@ -32,7 +32,7 @@ A powerful multi-feature AI-powered web application offering real-time utilities
 - **React + Vite**
 - **Axios**
 - **Speech Recognition + Synthesis APIs**
-- **Styled Components / CSS Modules**
+- **CSS Modules**
 
 ---
 
